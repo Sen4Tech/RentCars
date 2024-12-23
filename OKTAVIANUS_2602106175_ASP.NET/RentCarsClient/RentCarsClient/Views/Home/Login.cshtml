@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentCar Login</title>
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --primary-hover: #1d4ed8;
+            --background-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.hdwallpaperspulse.com/wp-content/uploads/2016/03/06/beautiful-car-background.jpeg");
+        }
+
+        .page-container {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-light);
+            padding: 1rem;
+            background: none;
+        }
+
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 120%;
+            max-width: 450px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .login-header h1 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .login-header p {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.625rem 0.875rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+        }
+
+        .input-group input::placeholder {
+            color: #94a3b8;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 0.625rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .login-button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .register-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Login ke RentCar</h1>
+                <p>Selamat datang kembali!</p>
+            </div>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        placeholder="Masukkan username Anda"
+                        required
+                    >
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Masukkan password Anda"
+                        required
+                    >
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div class="register-link">
+                Belum punya akun? <a href="Register">Register disini</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

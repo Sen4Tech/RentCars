@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OKTAVIANUS_2602106175_MINI PROJECT\\OKTAVIANUS_2602106175_ASP.NET\\RentCarsClient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{312E49D9-7F64-44B9-9173-5FC5913524F9}|RentCarsClient\\RentCarsClient.csproj|d:\\oktavianus_2602106175_mini project\\oktavianus_2602106175_asp.net\\rentcarsclient\\rentcarsclient\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{312E49D9-7F64-44B9-9173-5FC5913524F9}|RentCarsClient\\RentCarsClient.csproj|solutionrelative:rentcarsclient\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\OKTAVIANUS_2602106175_MINI PROJECT\\OKTAVIANUS_2602106175_ASP.NET\\RentCarsClient\\RentCarsClient\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "RentCarsClient\\Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\OKTAVIANUS_2602106175_MINI PROJECT\\OKTAVIANUS_2602106175_ASP.NET\\RentCarsClient\\RentCarsClient\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "RentCarsClient\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAC5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T13:34:19.824Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+﻿@{
+    ViewData["Title"] = "Riwayat Penyewaan";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riwayat Penyewaan Mobil</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #f4f7fe;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 5%;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-top: 10%;
+        }
+        
+        .rental-table {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 5%;
+            transition: transform 0.2s ease;
+        }
+        
+        .rental-table:hover {
+            transform: translateY(-2px);
+        }
+        
+        .rental-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .rental-table th {
+            background: #4f46e5;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            color: white;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .rental-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #4a5568;
+        }
+        
+        .rental-table tr:hover {
+            background-color: #f8fafc;
+        }
+        
+        .rental-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .status {
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .paid {
+            background: #dcfce7;
+            color: #15803d;
+        }
+        
+        .unpaid {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .price {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-weight: 500;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobil yang Pernah Disewa</h1>
+        <div class="rental-table">
+            <table id="rentalHistory">
+                <thead>
+                    <tr>
+                        <th>Tanggal Sewa</th>
+                        <th>Mobil</th>
+                        <th>Harga Sewa per Hari</th>
+                        <th>Total Hari</th>
+                        <th>Total Harga</th>
+                        <th>Status Pembayaran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const rentalData = [
+                {
+                    tanggal: "16 Oktober 2024 - 19 Oktober 2024",
+                    mobil: "Suzuki Ertiga 2019",
+                    hargaPerHari: 450000,
+                    totalHari: 4,
+                    totalHarga: 1800000,
+                    status: "Sudah Dibayar"
+                },
+                {
+                    tanggal: "10 September 2024 - 12 September 2024",
+                    mobil: "Honda Brio 2020",
+                    hargaPerHari: 300000,
+                    totalHari: 3,
+                    totalHarga: 900000,
+                    status: "Belum Dibayar"
+                },
+                {
+                    tanggal: "25 Agustus 2024 - 28 Agustus 2024",
+                    mobil: "Toyota Avanza 2021",
+                    hargaPerHari: 500000,
+                    totalHari: 4,
+                    totalHarga: 2000000,
+                    status: "Sudah Dibayar"
+                }
+            ];
+
+            function formatRupiah(angka) {
+                return "Rp " + angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
+            rentalData.forEach(function(rental) {
+                const row = `
+                    <tr>
+                        <td>${rental.tanggal}</td>
+                        <td>${rental.mobil}</td>
+                        <td class="price">${formatRupiah(rental.hargaPerHari)}</td>
+                        <td>${rental.totalHari}</td>
+                        <td class="price">${formatRupiah(rental.totalHarga)}</td>
+                        <td>
+                            <span class="status ${rental.status === 'Sudah Dibayar' ? 'paid' : 'unpaid'}">
+                                ${rental.status}
+                            </span>
+                        </td>
+                    </tr>
+                `;
+                $('#rentalHistory tbody').append(row);
+            });
+        });
+    </script>
+</body>
+</html>

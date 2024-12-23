@@ -1,0 +1,7 @@
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.GeneratedMSBuildEditorConfig.editorconfig
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.AssemblyInfoInputs.cache
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.AssemblyInfo.cs
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.csproj.CoreCompileInputs.cache
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.MvcApplicationPartsAssemblyInfo.cache
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.RazorAssemblyInfo.cache
+d:\OKTAVIANUS_2602106175_MINI PROJECT\OKTAVIANUS_2602106175_ASP.NET\RentCarsClient\obj\Debug\net8.0\RentCarsClient.RazorAssemblyInfo.cs
